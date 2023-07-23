@@ -252,7 +252,7 @@ impl<'de> Deserialize<'de> for PrivacyHint {
 #[serde(rename_all = "camelCase")]
 pub struct SendBundleResponse {
     /// Hash of the bundle bodies.
-    bundle_hash: TxHash,
+    pub bundle_hash: TxHash,
 }
 
 /// The version of the MEV-share API to use.
